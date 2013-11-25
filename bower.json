@@ -1,0 +1,17 @@
+{
+  "name": "gavsio",
+  "version": "0.0.0",
+  "dependencies": {
+    "backbone-amd": "~1.0.0",
+    "handlebars": "~1.0.0",
+    "jquery": "~1.9.0",
+    "layoutmanager-amd": "latest",
+    "modernizr": "~2.6.2",
+    "requirejs": "~2.1.8",
+    "requirejs-text": "~2.0.5",
+    "underscore-amd": "~1.4.4"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "~3.0.0"
+  }
+}
