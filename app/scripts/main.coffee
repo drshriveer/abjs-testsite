@@ -9,7 +9,6 @@ define ["app", "router", "templates"], (app, Router, Templates) ->
       # Handlebars pre-compiled templates make this about as easy as possible.
       # either the template exists and is ready to rock, or it doesn't and never will.
       console.error "unknown template '#{path}'" unless Templates[path]
-      console.log Templates
       Templates[path]
 
   # Define your master router on the application namespace and trigger all
