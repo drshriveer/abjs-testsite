@@ -13,7 +13,6 @@ define ['underscore', 'jquery', 'backbone', 'layoutmanager', 'plugins'], (_, $, 
 
     # Helper for using layouts.
     useLayout: (name) ->
-      iab.start()
       # If already using this Layout, then don't re-inject into the DOM.
       return @layout  if @layout and @layout.options.template is "layouts/#{name}"
       # If a layout already exists, remove it from the DOM.
@@ -30,6 +29,5 @@ define ['underscore', 'jquery', 'backbone', 'layoutmanager', 'plugins'], (_, $, 
       # Cache the reference.
       @layout = layout
       # Return the reference, for chainability.
-      iab.stop()
       layout
 
