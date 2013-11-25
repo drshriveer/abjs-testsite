@@ -10,12 +10,17 @@ ga('create', 'UA-45967923-1', 'auto');
   console.log(document.cookie);
 
 
+var customDimensions = {
+'header_name' : 'dimension1',
+ 'animals' : 'dimension2',
+'style_type' :'dimension3'
+}
+
 // Check for cookie
 // If cookie,
   // If !didNotUseCookie use GAID
   // Else use saved exp (didNotUseCookie)
 // If no cookie, Math.random exp && save didNoteUseCookie = exp;
-
 
 // Polyfills
 ''.trim || (String.prototype.trim = function(){return this.replace(/^[\s\uFEFF]+|[\s\uFEFF]+$/g,'');});
@@ -76,6 +81,7 @@ var substitute = function() {
     // Clean up the DOM.
     selectedExperience.removeAttribute('exp-name');
     currentTest.parentNode.replaceChild(selectedExperience, currentTest);
+    ga('set', customDimensions[testName], expName);
   }
 
   while (abClasses.length) {
