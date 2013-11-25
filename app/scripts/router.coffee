@@ -14,36 +14,24 @@ define ['app', 'views/navbar', 'views/landing', 'views/socialLink', 'views/info'
 
 		initialize: ->
       # set the application layout and attach views that are always present
-			iab.start()
 			app.useLayout 'layout'
 			app.layout.setView('#navbar', new NavbarView()).render()
 			app.layout.setView('#social-links', new SocialLinkView()).render()
-			iab.stop()
 
 		index: ->
-			iab.start()
 			app.layout.setView('#content',  new LandingView()).render()
-			iab.stop()
 
 		info: ->
-			iab.start()
 			app.layout.setView('#content',  new InfoView()).render()
-			iab.stop()
 
 		buynow: ->
-			iab.start()
 			app.layout.setView('#content', new BuynowView()).render()
-			iab.stop()
 
 		addtocart: ->
-			iab.start()
 			app.layout.setView('#content', new AddtocartView()).render()
-			iab.stop()
 
 		completed: ->
-			iab.start()
 			app.layout.setView('#content', new CompletedView()).render()
-			iab.stop()
 
 
 
