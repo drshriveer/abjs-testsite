@@ -6,7 +6,7 @@ define ['app', 'views/navbar', 'views/landing', 'views/socialLink', 'views/info'
 		routes:
 			'': 'index'
 			'info': 'info'
-			'addtocart': 'addtocart'
+			'buytoday': 'buytoday'
 			'buynow': 'buynow'
 			'checkout': 'checkout'
 			'completed':'completed'
@@ -25,10 +25,10 @@ define ['app', 'views/navbar', 'views/landing', 'views/socialLink', 'views/info'
 			app.layout.setView('#content',  new InfoView()).render()
 
 		buynow: ->
-			app.layout.setView('#content', new BuynowView()).render()
+			app.layout.setView('#content', new BuyNowView()).render()
 
-		addtocart: ->
-			app.layout.setView('#content', new AddtocartView()).render()
+		buytoday: ->
+			app.layout.setView('#content', new BuyTodayView()).render()
 
 		completed: ->
 			app.layout.setView('#content', new CompletedView()).render()
