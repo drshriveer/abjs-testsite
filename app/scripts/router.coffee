@@ -1,4 +1,4 @@
-define ['app', 'views/navbar', 'views/landing', 'views/socialLink', 'views/info', 'views/buynow', 'views/addtocart', 'views/completed'], (app, NavbarView, LandingView, SocialLinkView, InfoView, BuynowView, AddtocartView, CompletedView) ->
+define ['app', 'views/navbar', 'views/landing', 'views/socialLink', 'views/info', 'views/buynow', 'views/buytoday', 'views/completed'], (app, NavbarView, LandingView, SocialLinkView, InfoView, BuyNowView, BuyTodayView, CompletedView) ->
 	"use strict"
 
 	# Defining the application router, you can attach sub routers here.

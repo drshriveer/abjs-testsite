@@ -1,5 +1,5 @@
 define ['backbone'], (Backbone) ->
-  class BuynowView extends Backbone.View
+  class BuyNowView extends Backbone.View
     template: 'pages/buynow'
     className: 'container'
 
